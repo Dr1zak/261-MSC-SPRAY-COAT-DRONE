@@ -1,0 +1,6 @@
+string path
+---
+bool valid
+uint32 accepted
+uint32 rejected
+string diagnostic

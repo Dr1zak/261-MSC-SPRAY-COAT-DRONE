@@ -1,0 +1,1759 @@
+{
+  "status": "FIT-CHECK assembly; unqualified airframe payload, clamp strength and hose motion",
+  "module_translation_mm": [
+    40.0,
+    0.27591,
+    -262.0
+  ],
+  "rail_centres_mm": [
+    [
+      0,
+      -29.724089,
+      16.809569
+    ],
+    [
+      0,
+      30.275911,
+      16.809569
+    ]
+  ],
+  "rail_nominal_OD_mm": 10,
+  "rail_mesh_OD_mm": 9.4,
+  "clamp_bore_mm": 10.2,
+  "clamp_x_mm": [
+    -74,
+    60
+  ],
+  "module_lowest_z_mm": -254,
+  "stock_ground_z_mm": -185.466858,
+  "stock_ground_interference_mm": 68.533142,
+  "proposed_ground_z_mm": -279,
+  "proposed_module_clearance_mm": 25,
+  "nozzle_outlet_z_mm": -240,
+  "proposed_nozzle_clearance_mm": 39,
+  "landing_leg_proxy_min_clearance_mm": 7.319733157346041,
+  "landing_leg_proxy_min_pair": [
+    0,
+    "HOSE_SUPPLY_SERVICE_LOOP_0deg",
+    1
+  ],
+  "landing_leg_proxy_clashes": [],
+  "all_new_shapes_valid": true,
+  "new_dry_parts": 17,
+  "mesh_groups": {
+    "rail_mount": [
+      {
+        "file": "rail_mount_00.stl",
+        "color": [
+          0.69,
+          0.74,
+          0.79
+        ],
+        "parts": [
+          "RAIL_LOWER_0_0",
+          "RAIL_CAP_0_0",
+          "RAIL_LOWER_0_1",
+          "RAIL_CAP_0_1",
+          "RAIL_LOWER_1_0",
+          "RAIL_CAP_1_0",
+          "RAIL_LOWER_1_1",
+          "RAIL_CAP_1_1",
+          "X500_BRIDGE_156x104"
+        ]
+      }
+    ],
+    "landing_risers": [
+      {
+        "file": "landing_risers_00.stl",
+        "color": [
+          0.92,
+          0.43,
+          0.09
+        ],
+        "parts": [
+          "OPTIONAL_SKID_RISER_0_0",
+          "OPTIONAL_SKID_CAP_0_0",
+          "OPTIONAL_SKID_RISER_0_1",
+          "OPTIONAL_SKID_CAP_0_1",
+          "OPTIONAL_SKID_RISER_1_0",
+          "OPTIONAL_SKID_CAP_1_0",
+          "OPTIONAL_SKID_RISER_1_1",
+          "OPTIONAL_SKID_CAP_1_1"
+        ]
+      }
+    ],
+    "sprayer_body": [
+      {
+        "file": "sprayer_body_00.stl",
+        "color": [
+          0.86,
+          0.6,
+          0.19
+        ],
+        "parts": [
+          "CAN_OD65_7_HEIGHT_ASSUMED"
+        ]
+      },
+      {
+        "file": "sprayer_body_01.stl",
+        "color": [
+          0.7,
+          0.74,
+          0.79
+        ],
+        "parts": [
+          "CAN_STEM_OD4_REFERENCE",
+          "CLAMP_ANCHOR_0",
+          "CLAMP_ANCHOR_1",
+          "WET_STEM_ADAPTER_REFERENCE",
+          "TRIGGER_STOP_SCREW",
+          "05_CAN_TRIGGER_BACKBONE",
+          "01_COMPACT_BASE_4mm",
+          "03_COMPACT_DRONE_INTERFACE",
+          "TOP_SPINE_SCREW_-20",
+          "TOP_SPINE_SCREW_-8",
+          "BEARING_73",
+          "BEARING_95",
+          "BEARING_HOUSING_RETENTION_BAND",
+          "04_HEAD_SUPPORT_ALUMINUM",
+          "LID_SCREW_-82_51",
+          "LID_SCREW_0_51",
+          "LID_SCREW_-82_101",
+          "LID_SCREW_0_101",
+          "06_ELECTRONICS_UPRIGHT_LEFT",
+          "06_ELECTRONICS_UPRIGHT_RIGHT",
+          "06_ELECTRONICS_SEAT"
+        ]
+      },
+      {
+        "file": "sprayer_body_02.stl",
+        "color": [
+          0.06,
+          0.51,
+          0.57
+        ],
+        "parts": [
+          "PRINT_CAN_CLAMP_0_FRONT",
+          "PRINT_CAN_CLAMP_0_BACK",
+          "PRINT_CAN_CLAMP_1_FRONT",
+          "PRINT_CAN_CLAMP_1_BACK",
+          "PRINT_PRESS_GUIDE",
+          "PRINT_TRIGGER_CARTRIDGE",
+          "PRINT_BEARING_HOUSING_LEFT",
+          "PRINT_BEARING_HOUSING_RIGHT",
+          "PRINT_ORIENTATION_CARTRIDGE",
+          "PRINT_ELECTRONICS_LID"
+        ]
+      },
+      {
+        "file": "sprayer_body_03.stl",
+        "color": [
+          0.1,
+          0.38,
+          0.76
+        ],
+        "parts": [
+          "DS3240_TRIGGER_0",
+          "DS3240_ORIENTATION_0",
+          "PCB_VALVE_DRIVER_ENVELOPE"
+        ]
+      },
+      {
+        "file": "sprayer_body_04.stl",
+        "color": [
+          0.15,
+          0.19,
+          0.24
+        ],
+        "parts": [
+          "DS3240_TRIGGER_2",
+          "DS3240_TRIGGER_3",
+          "DS3240_TRIGGER_4",
+          "DS3240_TRIGGER_7",
+          "TIMING_BELT_160mm_ENVELOPE",
+          "DS3240_ORIENTATION_2",
+          "DS3240_ORIENTATION_3",
+          "DS3240_ORIENTATION_4",
+          "DS3240_ORIENTATION_7",
+          "PRINT_ELECTRONICS_BOX",
+          "ELECTRONICS_TERMINAL_ENVELOPE"
+        ]
+      },
+      {
+        "file": "sprayer_body_05.stl",
+        "color": [
+          0.85,
+          0.56,
+          0.13
+        ],
+        "parts": [
+          "WET_ADAPTER_OUTLET_REFERENCE",
+          "PULLEY_SERVO_40T_ENVELOPE",
+          "PCB_6V_BEC_ENVELOPE"
+        ]
+      },
+      {
+        "file": "sprayer_body_06.stl",
+        "color": [
+          0.1,
+          0.5,
+          0.27
+        ],
+        "parts": [
+          "PCB_CONTROLLER_ENVELOPE"
+        ]
+      },
+      {
+        "file": "sprayer_body_07.stl",
+        "color": [
+          0.8,
+          0.18,
+          0.15
+        ],
+        "parts": [
+          "WIRE_HARNESS_0",
+          "WIRE_HARNESS_1",
+          "WIRE_HARNESS_2"
+        ]
+      }
+    ],
+    "trigger_crank": [
+      {
+        "file": "trigger_crank_00.stl",
+        "color": [
+          0.7,
+          0.74,
+          0.79
+        ],
+        "parts": [
+          "TRIGGER_METAL_HORN"
+        ]
+      },
+      {
+        "file": "trigger_crank_01.stl",
+        "color": [
+          0.15,
+          0.19,
+          0.24
+        ],
+        "parts": [
+          "TRIGGER_ROLLER"
+        ]
+      }
+    ],
+    "nozzle_head": [
+      {
+        "file": "nozzle_head_00.stl",
+        "color": [
+          0.15,
+          0.19,
+          0.24
+        ],
+        "parts": [
+          "SHAFT_COLLAR_69",
+          "SHAFT_COLLAR_104",
+          "VALVE_2V025_COIL",
+          "VALVE_TOP_NUT",
+          "VALVE_STRAP_11.0",
+          "VALVE_STRAP_31.0"
+        ]
+      },
+      {
+        "file": "nozzle_head_01.stl",
+        "color": [
+          0.85,
+          0.56,
+          0.13
+        ],
+        "parts": [
+          "PULLEY_DRIVEN_40T_ENVELOPE",
+          "VALVE_FITTING_IN",
+          "VALVE_FITTING_OUT",
+          "WET_FAN_TIP_ENVELOPE"
+        ]
+      },
+      {
+        "file": "nozzle_head_02.stl",
+        "color": [
+          0.7,
+          0.74,
+          0.79
+        ],
+        "parts": [
+          "DRY_HOLLOW_SPINDLE",
+          "VALVE_2V025_BODY",
+          "WET_NOZZLE_BODY_REFERENCE"
+        ]
+      },
+      {
+        "file": "nozzle_head_03.stl",
+        "color": [
+          0.06,
+          0.51,
+          0.57
+        ],
+        "parts": [
+          "PRINT_ROTATING_VALVE_CRADLE",
+          "PRINT_NOZZLE_SHAFT_COUPLER_LEFT",
+          "PRINT_NOZZLE_SHAFT_COUPLER_RIGHT"
+        ]
+      },
+      {
+        "file": "nozzle_head_04.stl",
+        "color": [
+          0.1,
+          0.38,
+          0.76
+        ],
+        "parts": [
+          "HOSE_SHORT_OUTLET"
+        ]
+      }
+    ]
+  },
+  "mass_items": [
+    {
+      "name": "RAIL_LOWER_0_0",
+      "link": "rail_mount",
+      "mass_kg": 0.01796579471297015,
+      "com_mm": [
+        -74.0,
+        -29.72408899999999,
+        -1.0248325376962155
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        36.409569000000005
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_CAP_0_0",
+      "link": "rail_mount",
+      "mass_kg": 0.0039046609545314815,
+      "com_mm": [
+        -74.0,
+        -29.724089,
+        21.425656353439205
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        7.600000000000005
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_LOWER_0_1",
+      "link": "rail_mount",
+      "mass_kg": 0.01796579471297019,
+      "com_mm": [
+        -74.0,
+        30.275910999999994,
+        -1.0248325376962075
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        36.409569
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_CAP_0_1",
+      "link": "rail_mount",
+      "mass_kg": 0.0039046609545314824,
+      "com_mm": [
+        -73.99999999999997,
+        30.275911000000008,
+        21.425656353439205
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        7.599999999999998
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_LOWER_1_0",
+      "link": "rail_mount",
+      "mass_kg": 0.01796579471297015,
+      "com_mm": [
+        59.99999999999997,
+        -29.724089,
+        -1.0248325376962149
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        36.409569000000005
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_CAP_1_0",
+      "link": "rail_mount",
+      "mass_kg": 0.0037956328470783274,
+      "com_mm": [
+        60.05744923803,
+        -29.38979316214896,
+        21.353008110989137
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        7.600000000000005
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_LOWER_1_1",
+      "link": "rail_mount",
+      "mass_kg": 0.017965794712970187,
+      "com_mm": [
+        59.999999999999986,
+        30.275910999999997,
+        -1.0248325376962075
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        36.409569
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "RAIL_CAP_1_1",
+      "link": "rail_mount",
+      "mass_kg": 0.0037967447558846356,
+      "com_mm": [
+        60.05684669662325,
+        29.944436647150827,
+        21.35377006320478
+      ],
+      "size_mm": [
+        9.0,
+        28.0,
+        7.599999999999998
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "X500_BRIDGE_156x104",
+      "link": "rail_mount",
+      "mass_kg": 0.24168400852222136,
+      "com_mm": [
+        -7.380733297380034,
+        0.33628747009976967,
+        -22.99545934691595
+      ],
+      "size_mm": [
+        156.0,
+        104.0,
+        6.0
+      ],
+      "basis": "FIT CHECK: aluminum; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_RISER_0_0",
+      "link": "landing_risers",
+      "mass_kg": 0.057758115022122865,
+      "com_mm": [
+        -89.012093,
+        -119.67759000000002,
+        -241.04080819375045
+      ],
+      "size_mm": [
+        50.0,
+        38.0,
+        102.63314199999999
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_CAP_0_0",
+      "link": "landing_risers",
+      "mass_kg": 0.005298900961254265,
+      "com_mm": [
+        -89.01209299999996,
+        -119.67759000000001,
+        -171.21671284054162
+      ],
+      "size_mm": [
+        20.0,
+        32.0,
+        8.000000000000057
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_RISER_0_1",
+      "link": "landing_risers",
+      "mass_kg": 0.057758115022121664,
+      "com_mm": [
+        -89.01209299999998,
+        120.22942000000002,
+        -241.04080819375164
+      ],
+      "size_mm": [
+        50.0,
+        38.0,
+        102.63314200000005
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_CAP_0_1",
+      "link": "landing_risers",
+      "mass_kg": 0.005298900961254268,
+      "com_mm": [
+        -89.01209299999994,
+        120.22941999999995,
+        -171.21671284054162
+      ],
+      "size_mm": [
+        20.0,
+        32.0,
+        8.000000000000057
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_RISER_1_0",
+      "link": "landing_risers",
+      "mass_kg": 0.057758115022122865,
+      "com_mm": [
+        86.987907,
+        -119.67759000000002,
+        -241.04080819375054
+      ],
+      "size_mm": [
+        50.0,
+        38.0,
+        102.63314199999999
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_CAP_1_0",
+      "link": "landing_risers",
+      "mass_kg": 0.005298900961254265,
+      "com_mm": [
+        86.98790699999998,
+        -119.67759000000001,
+        -171.21671284054162
+      ],
+      "size_mm": [
+        20.0,
+        32.0,
+        8.000000000000057
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_RISER_1_1",
+      "link": "landing_risers",
+      "mass_kg": 0.05775811502212168,
+      "com_mm": [
+        86.98790700000002,
+        120.22941999999999,
+        -241.04080819375162
+      ],
+      "size_mm": [
+        50.0,
+        38.0,
+        102.63314200000005
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "OPTIONAL_SKID_CAP_1_1",
+      "link": "landing_risers",
+      "mass_kg": 0.005298900961254267,
+      "com_mm": [
+        86.98790699999999,
+        120.22941999999998,
+        -171.21671284054162
+      ],
+      "size_mm": [
+        20.0,
+        32.0,
+        8.000000000000057
+      ],
+      "basis": "FIT CHECK: polymer; nominal solid-density mass, strength unverified"
+    },
+    {
+      "name": "CAN_OD65_7_HEIGHT_ASSUMED",
+      "link": "sprayer_body",
+      "mass_kg": 0.45,
+      "com_mm": [
+        -39.99999999999999,
+        -2.824237298699109e-17,
+        101.33189355872831
+      ],
+      "size_mm": [
+        65.69999999999999,
+        65.7,
+        187.0
+      ],
+      "basis": "ASSUMED full can450g; replace with scale measurement"
+    },
+    {
+      "name": "CAN_STEM_OD4_REFERENCE",
+      "link": "sprayer_body",
+      "mass_kg": 0.0002714336052701582,
+      "com_mm": [
+        -40.00000000000001,
+        1.3476633003994818e-16,
+        203.0
+      ],
+      "size_mm": [
+        4.0,
+        4.0,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_CAN_CLAMP_0_FRONT",
+      "link": "sprayer_body",
+      "mass_kg": 0.006208143958028778,
+      "com_mm": [
+        -39.99999999999996,
+        -20.355168312929084,
+        40.00000000000019
+      ],
+      "size_mm": [
+        84.0,
+        36.599999999999994,
+        10.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PRINT_CAN_CLAMP_0_BACK",
+      "link": "sprayer_body",
+      "mass_kg": 0.006208143958029893,
+      "com_mm": [
+        -39.999999999999886,
+        20.355168312928345,
+        40.000000000000036
+      ],
+      "size_mm": [
+        84.0,
+        36.599999999999994,
+        10.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "CLAMP_ANCHOR_0",
+      "link": "sprayer_body",
+      "mass_kg": 0.0021599999999999996,
+      "com_mm": [
+        -76.50000000000001,
+        2.2204460492503138e-17,
+        40.0
+      ],
+      "size_mm": [
+        5.0,
+        16.0,
+        10.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_CAN_CLAMP_1_FRONT",
+      "link": "sprayer_body",
+      "mass_kg": 0.006208143958029608,
+      "com_mm": [
+        -39.99999999999994,
+        -20.355168312929163,
+        154.00000000000017
+      ],
+      "size_mm": [
+        84.0,
+        36.599999999999994,
+        10.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PRINT_CAN_CLAMP_1_BACK",
+      "link": "sprayer_body",
+      "mass_kg": 0.006208143958029852,
+      "com_mm": [
+        -39.99999999999988,
+        20.355168312928328,
+        153.99999999999997
+      ],
+      "size_mm": [
+        84.0,
+        36.599999999999994,
+        10.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "CLAMP_ANCHOR_1",
+      "link": "sprayer_body",
+      "mass_kg": 0.0021599999999999996,
+      "com_mm": [
+        -76.50000000000001,
+        2.2204460492503138e-17,
+        154.00000000000003
+      ],
+      "size_mm": [
+        5.0,
+        16.0,
+        10.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "DS3240_TRIGGER_0",
+      "link": "sprayer_body",
+      "mass_kg": 0.03624684814639459,
+      "com_mm": [
+        -34.999627523458685,
+        -33.63910213232367,
+        213.99999999999997
+      ],
+      "size_mm": [
+        39.93044059585036,
+        19.000000000000004,
+        20.0304430328344
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_TRIGGER_2",
+      "link": "sprayer_body",
+      "mass_kg": 0.002901113869194392,
+      "com_mm": [
+        -24.99858666758591,
+        -19.050908853701802,
+        214.01532597734246
+      ],
+      "size_mm": [
+        17.300000400000002,
+        15.800000000000036,
+        17.300000399999988
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_TRIGGER_3",
+      "link": "sprayer_body",
+      "mass_kg": 0.0004467086029423386,
+      "com_mm": [
+        -12.111503169530351,
+        -44.95000059608176,
+        213.87142740848003
+      ],
+      "size_mm": [
+        18.304583748372696,
+        4.5,
+        6.800000000000011
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_TRIGGER_4",
+      "link": "sprayer_body",
+      "mass_kg": 0.026410957059083414,
+      "com_mm": [
+        -34.80150105975681,
+        -19.862726048415027,
+        213.9999993018407
+      ],
+      "size_mm": [
+        54.40157075872,
+        13.910073877661652,
+        19.899218287313744
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_TRIGGER_7",
+      "link": "sprayer_body",
+      "mass_kg": 0.005994372322385265,
+      "com_mm": [
+        -35.194651105385844,
+        -49.523480457265656,
+        213.99999703951138
+      ],
+      "size_mm": [
+        40.04097221520097,
+        11.339615146203357,
+        20.140976023031044
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "TRIGGER_METAL_HORN",
+      "link": "trigger_crank",
+      "mass_kg": 0.0012521745900446414,
+      "com_mm": [
+        -5.427650295241919,
+        -0.5000000000000018,
+        0.0
+      ],
+      "size_mm": [
+        23.0,
+        3.0,
+        10.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "TRIGGER_ROLLER",
+      "link": "trigger_crank",
+      "mass_kg": 0.0005301437602932774,
+      "com_mm": [
+        -15.000000000000009,
+        7.5,
+        0.0
+      ],
+      "size_mm": [
+        6.0,
+        15.0,
+        6.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 1.25g/cm3"
+    },
+    {
+      "name": "WET_STEM_ADAPTER_REFERENCE",
+      "link": "sprayer_body",
+      "mass_kg": 0.007522950077232256,
+      "com_mm": [
+        -39.99999999999975,
+        -0.10088130824935566,
+        206.50931203917156
+      ],
+      "size_mm": [
+        18.0,
+        18.0,
+        9.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "WET_ADAPTER_OUTLET_REFERENCE",
+      "link": "sprayer_body",
+      "mass_kg": 0.00034989488179356336,
+      "com_mm": [
+        -39.99999999999999,
+        10.499999999999998,
+        208.00000000000003
+      ],
+      "size_mm": [
+        8.0,
+        3.0,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_PRESS_GUIDE",
+      "link": "sprayer_body",
+      "mass_kg": 0.0068525,
+      "com_mm": [
+        -49.456402772710724,
+        -8.454396205764317,
+        202.92393287121487
+      ],
+      "size_mm": [
+        54.0,
+        42.0,
+        13.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "TRIGGER_STOP_SCREW",
+      "link": "sprayer_body",
+      "mass_kg": 0.00015268140296446393,
+      "com_mm": [
+        -48.00000000000001,
+        -12.0,
+        215.00000000000003
+      ],
+      "size_mm": [
+        3.0,
+        3.0,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_TRIGGER_CARTRIDGE",
+      "link": "sprayer_body",
+      "mass_kg": 0.006884311958466886,
+      "com_mm": [
+        -54.70857811478602,
+        -26.396040730598653,
+        213.6513812833469
+      ],
+      "size_mm": [
+        76.0,
+        13.0,
+        28.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "05_CAN_TRIGGER_BACKBONE",
+      "link": "sprayer_body",
+      "mass_kg": 0.07557813737800347,
+      "com_mm": [
+        -78.91981135181757,
+        -14.0,
+        128.14335352176795
+      ],
+      "size_mm": [
+        18.0,
+        30.0,
+        220.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "01_COMPACT_BASE_4mm",
+      "link": "sprayer_body",
+      "mass_kg": 0.09832274680430006,
+      "com_mm": [
+        -3.4858940858358403,
+        -5.424061385422833,
+        9.999999999999998
+      ],
+      "size_mm": [
+        178.0,
+        90.0,
+        4.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "03_COMPACT_DRONE_INTERFACE",
+      "link": "sprayer_body",
+      "mass_kg": 0.06736845989543856,
+      "com_mm": [
+        -42.89229234475379,
+        0.04075424793099132,
+        233.99999999999972
+      ],
+      "size_mm": [
+        90.0,
+        96.0,
+        4.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "TOP_SPINE_SCREW_-20",
+      "link": "sprayer_body",
+      "mass_kg": 0.0003526940408479117,
+      "com_mm": [
+        -80.0,
+        -20.0,
+        232.45454545454544
+      ],
+      "size_mm": [
+        5.400000000000006,
+        5.399999999999999,
+        14.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "TOP_SPINE_SCREW_-8",
+      "link": "sprayer_body",
+      "mass_kg": 0.0003526940408479117,
+      "com_mm": [
+        -80.0,
+        -8.0,
+        232.45454545454544
+      ],
+      "size_mm": [
+        5.400000000000006,
+        5.3999999999999995,
+        14.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_BEARING_HOUSING_LEFT",
+      "link": "sprayer_body",
+      "mass_kg": 0.02024692160763994,
+      "com_mm": [
+        24.464639596499055,
+        -20.0,
+        88.49999999999994
+      ],
+      "size_mm": [
+        21.0,
+        42.0,
+        37.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PRINT_BEARING_HOUSING_RIGHT",
+      "link": "sprayer_body",
+      "mass_kg": 0.02024692160763993,
+      "com_mm": [
+        45.53536040350092,
+        -20.000000000000007,
+        88.5
+      ],
+      "size_mm": [
+        21.000000000000007,
+        42.0,
+        37.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "BEARING_73",
+      "link": "sprayer_body",
+      "mass_kg": 0.029,
+      "com_mm": [
+        34.99999999999999,
+        -19.999999999999996,
+        77.5
+      ],
+      "size_mm": [
+        32.0,
+        32.0,
+        9.0
+      ],
+      "basis": "ASSUMED bearing29g each"
+    },
+    {
+      "name": "BEARING_95",
+      "link": "sprayer_body",
+      "mass_kg": 0.029,
+      "com_mm": [
+        34.99999999999999,
+        -19.999999999999996,
+        99.49999999999997
+      ],
+      "size_mm": [
+        32.0,
+        32.0,
+        9.0
+      ],
+      "basis": "ASSUMED bearing29g each"
+    },
+    {
+      "name": "SHAFT_COLLAR_69",
+      "link": "nozzle_head",
+      "mass_kg": 0.0010856920095798088,
+      "com_mm": [
+        1.4210854715202004e-14,
+        -7.105427357601002e-15,
+        -24.999999999999986
+      ],
+      "size_mm": [
+        22.0,
+        22.0,
+        2.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "SHAFT_COLLAR_104",
+      "link": "nozzle_head",
+      "mass_kg": 0.0010856920095798088,
+      "com_mm": [
+        1.4210854715202004e-14,
+        -7.105427357601002e-15,
+        10.000000000000028
+      ],
+      "size_mm": [
+        22.0,
+        22.0,
+        2.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "BEARING_HOUSING_RETENTION_BAND",
+      "link": "sprayer_body",
+      "mass_kg": 0.004975123515597061,
+      "com_mm": [
+        34.99999999999999,
+        -20.000000000000004,
+        87.49999999999991
+      ],
+      "size_mm": [
+        46.0,
+        46.0,
+        7.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "04_HEAD_SUPPORT_ALUMINUM",
+      "link": "sprayer_body",
+      "mass_kg": 0.05219840847983792,
+      "com_mm": [
+        34.999999999999986,
+        -19.999999999999996,
+        52.0235433844318
+      ],
+      "size_mm": [
+        46.0,
+        56.0,
+        58.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PULLEY_DRIVEN_40T_ENVELOPE",
+      "link": "nozzle_head",
+      "mass_kg": 0.0072459674908499794,
+      "com_mm": [
+        0.0,
+        0.0,
+        -40.000000000000014
+      ],
+      "size_mm": [
+        28.464790894703256,
+        28.464790894703256,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PULLEY_SERVO_40T_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.010503340400095172,
+      "com_mm": [
+        75.0,
+        -19.999999999999996,
+        54.999999999999986
+      ],
+      "size_mm": [
+        28.46479089470325,
+        28.464790894703256,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "TIMING_BELT_160mm_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.0019199999999999409,
+      "com_mm": [
+        54.99999999999997,
+        -19.999999999999975,
+        54.99999999999994
+      ],
+      "size_mm": [
+        67.06479089470326,
+        27.064790894703265,
+        6.000000000000057
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 1.25g/cm3"
+    },
+    {
+      "name": "DS3240_ORIENTATION_0",
+      "link": "sprayer_body",
+      "mass_kg": 0.036246848146394596,
+      "com_mm": [
+        74.99999999999996,
+        -10.000372476541315,
+        78.63910213232367
+      ],
+      "size_mm": [
+        20.03044303283434,
+        39.930440595850364,
+        19.0
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_ORIENTATION_2",
+      "link": "sprayer_body",
+      "mass_kg": 0.002901113869194391,
+      "com_mm": [
+        75.01532597734247,
+        -20.00141333241409,
+        64.0509088537018
+      ],
+      "size_mm": [
+        17.300000399999988,
+        17.300000400000002,
+        15.80000000000004
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_ORIENTATION_3",
+      "link": "sprayer_body",
+      "mass_kg": 0.00044670860294233823,
+      "com_mm": [
+        74.87142740848003,
+        -32.888496830469656,
+        89.95000059608174
+      ],
+      "size_mm": [
+        6.800000000000011,
+        18.304583748372696,
+        4.5
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_ORIENTATION_4",
+      "link": "sprayer_body",
+      "mass_kg": 0.0264109570590834,
+      "com_mm": [
+        74.99999930184072,
+        -10.19849894024319,
+        64.86272604841501
+      ],
+      "size_mm": [
+        19.899218287313758,
+        54.401570758720005,
+        13.91007387766166
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "DS3240_ORIENTATION_7",
+      "link": "sprayer_body",
+      "mass_kg": 0.005994372322385266,
+      "com_mm": [
+        74.9999970395114,
+        -9.80534889461416,
+        94.52348045726565
+      ],
+      "size_mm": [
+        20.140976023031044,
+        40.040972215200966,
+        11.339615146203371
+      ],
+      "basis": "ASSUMED servo72g each; replace with actual version"
+    },
+    {
+      "name": "PRINT_ORIENTATION_CARTRIDGE",
+      "link": "sprayer_body",
+      "mass_kg": 0.011275061958466885,
+      "com_mm": [
+        75.0,
+        6.988154983588638,
+        51.70964861537008
+      ],
+      "size_mm": [
+        34.0,
+        65.0,
+        66.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "DRY_HOLLOW_SPINDLE",
+      "link": "nozzle_head",
+      "mass_kg": 0.02253110981246429,
+      "com_mm": [
+        0.0,
+        -7.105427357601002e-15,
+        -14.499999999999957
+      ],
+      "size_mm": [
+        15.0,
+        15.0,
+        85.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_ROTATING_VALVE_CRADLE",
+      "link": "nozzle_head",
+      "mass_kg": 0.014068650458717545,
+      "com_mm": [
+        0.3632251489044407,
+        19.845783210133654,
+        27.14222807317988
+      ],
+      "size_mm": [
+        37.0,
+        78.0,
+        10.000000000000028
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "VALVE_2V025_BODY",
+      "link": "nozzle_head",
+      "mass_kg": 0.05995804986905837,
+      "com_mm": [
+        0.0,
+        42.0,
+        42.50000000000003
+      ],
+      "size_mm": [
+        22.0,
+        30.0,
+        25.0
+      ],
+      "basis": "ASSUMED complete valve200g"
+    },
+    {
+      "name": "VALVE_2V025_COIL",
+      "link": "nozzle_head",
+      "mass_kg": 0.13782154422911302,
+      "com_mm": [
+        0.0,
+        42.0,
+        74.5
+      ],
+      "size_mm": [
+        30.0,
+        32.0,
+        39.0
+      ],
+      "basis": "ASSUMED complete valve200g"
+    },
+    {
+      "name": "VALVE_TOP_NUT",
+      "link": "nozzle_head",
+      "mass_kg": 0.0022204059018286265,
+      "com_mm": [
+        -7.105427357601002e-15,
+        42.0,
+        95.49999999999997
+      ],
+      "size_mm": [
+        16.0,
+        16.0,
+        3.0
+      ],
+      "basis": "ASSUMED complete valve200g"
+    },
+    {
+      "name": "VALVE_FITTING_IN",
+      "link": "nozzle_head",
+      "mass_kg": 0.0008164213908516477,
+      "com_mm": [
+        7.105427357601002e-15,
+        60.5,
+        42.5
+      ],
+      "size_mm": [
+        8.0,
+        7.0,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "VALVE_FITTING_OUT",
+      "link": "nozzle_head",
+      "mass_kg": 0.0008164213908516477,
+      "com_mm": [
+        7.105427357601002e-15,
+        23.5,
+        42.50000000000003
+      ],
+      "size_mm": [
+        8.0,
+        7.0,
+        8.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "VALVE_STRAP_11.0",
+      "link": "nozzle_head",
+      "mass_kg": 0.0015713999999999984,
+      "com_mm": [
+        4.263256414560601e-14,
+        32.00000000000001,
+        58.64432989690724
+      ],
+      "size_mm": [
+        34.0,
+        2.0,
+        66.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "VALVE_STRAP_31.0",
+      "link": "nozzle_head",
+      "mass_kg": 0.0015713999999999984,
+      "com_mm": [
+        4.263256414560601e-14,
+        52.0,
+        58.64432989690724
+      ],
+      "size_mm": [
+        34.0,
+        2.0,
+        66.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "WET_NOZZLE_BODY_REFERENCE",
+      "link": "nozzle_head",
+      "mass_kg": 0.006809166457206857,
+      "com_mm": [
+        -7.105427357601002e-15,
+        7.105427357601002e-15,
+        -63.5
+      ],
+      "size_mm": [
+        16.0,
+        16.0,
+        13.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "WET_FAN_TIP_ENVELOPE",
+      "link": "nozzle_head",
+      "mass_kg": 0.0032937829032623238,
+      "com_mm": [
+        -7.105427357601002e-15,
+        -7.105427357601002e-15,
+        -70.99134867802388
+      ],
+      "size_mm": [
+        20.0,
+        20.0,
+        4.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PRINT_NOZZLE_SHAFT_COUPLER_LEFT",
+      "link": "nozzle_head",
+      "mass_kg": 0.004068616301016441,
+      "com_mm": [
+        -5.728212890382835,
+        0.0,
+        -56.8503900043258
+      ],
+      "size_mm": [
+        11.600000000000003,
+        32.0,
+        20.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PRINT_NOZZLE_SHAFT_COUPLER_RIGHT",
+      "link": "nozzle_head",
+      "mass_kg": 0.004068616301016443,
+      "com_mm": [
+        5.728212890382849,
+        0.0,
+        -56.850390004325774
+      ],
+      "size_mm": [
+        11.600000000000014,
+        32.0,
+        20.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "HOSE_SHORT_OUTLET",
+      "link": "nozzle_head",
+      "mass_kg": 0.003057672091248,
+      "com_mm": [
+        0.0,
+        2.033125789604018,
+        -2.3594821872366083
+      ],
+      "size_mm": [
+        6.0,
+        24.895020606725062,
+        104.39502060672507
+      ],
+      "basis": "ASSUMED hose density1.3g/cm3; fluid excluded"
+    },
+    {
+      "name": "HOSE_SUPPLY_SERVICE_LOOP_0deg",
+      "link": "sprayer_body",
+      "mass_kg": 0.005482389881157058,
+      "com_mm": [
+        2.3317383289814093,
+        61.46021293223932,
+        189.43345785703485
+      ],
+      "size_mm": [
+        86.43788521929801,
+        67.71894260964899,
+        81.93788521929798
+      ],
+      "basis": "ASSUMED hose density1.3g/cm3; fluid excluded"
+    },
+    {
+      "name": "PRINT_ELECTRONICS_BOX",
+      "link": "sprayer_body",
+      "mass_kg": 0.06434361667717317,
+      "com_mm": [
+        -32.72214254024474,
+        54.21198633706112,
+        96.00292952389427
+      ],
+      "size_mm": [
+        94.0,
+        36.0,
+        62.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "PRINT_ELECTRONICS_LID",
+      "link": "sprayer_body",
+      "mass_kg": 0.021718811958466876,
+      "com_mm": [
+        -33.000000000000014,
+        78.50000000000003,
+        96.0
+      ],
+      "size_mm": [
+        94.0,
+        3.0000000000000284,
+        62.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "LID_SCREW_-82_51",
+      "link": "sprayer_body",
+      "mass_kg": 0.00032864671988100863,
+      "com_mm": [
+        -74.0,
+        77.51567944250873,
+        121.00000000000001
+      ],
+      "size_mm": [
+        5.699999999999989,
+        12.0,
+        5.699999999999989
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "LID_SCREW_0_51",
+      "link": "sprayer_body",
+      "mass_kg": 0.00032864671988100863,
+      "com_mm": [
+        7.999999999999999,
+        77.51567944250873,
+        121.0
+      ],
+      "size_mm": [
+        5.699999999999999,
+        12.0,
+        5.699999999999989
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "LID_SCREW_-82_101",
+      "link": "sprayer_body",
+      "mass_kg": 0.0003286467198810087,
+      "com_mm": [
+        -74.00000000000001,
+        77.51567944250873,
+        71.0
+      ],
+      "size_mm": [
+        5.699999999999989,
+        12.0,
+        5.699999999999989
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "LID_SCREW_0_101",
+      "link": "sprayer_body",
+      "mass_kg": 0.0003286467198810087,
+      "com_mm": [
+        8.0,
+        77.51567944250874,
+        71.0
+      ],
+      "size_mm": [
+        5.699999999999999,
+        12.0,
+        5.699999999999989
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 2.7g/cm3"
+    },
+    {
+      "name": "PCB_6V_BEC_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.027924647775842963,
+      "com_mm": [
+        -52.5,
+        53.000000000000014,
+        106.5
+      ],
+      "size_mm": [
+        35.0,
+        12.000000000000007,
+        21.0
+      ],
+      "basis": "ASSUMED electronics80g total"
+    },
+    {
+      "name": "PCB_CONTROLLER_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.021529206902010448,
+      "com_mm": [
+        -13.000000000000004,
+        52.000000000000014,
+        85.0
+      ],
+      "size_mm": [
+        34.0,
+        10.000000000000007,
+        20.0
+      ],
+      "basis": "ASSUMED electronics80g total"
+    },
+    {
+      "name": "PCB_VALVE_DRIVER_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.019148329903435176,
+      "com_mm": [
+        -16.0,
+        53.00000000000001,
+        109.0
+      ],
+      "size_mm": [
+        28.0,
+        12.000000000000007,
+        18.0
+      ],
+      "basis": "ASSUMED electronics80g total"
+    },
+    {
+      "name": "ELECTRONICS_TERMINAL_ENVELOPE",
+      "link": "sprayer_body",
+      "mass_kg": 0.011397815418711413,
+      "com_mm": [
+        -53.0,
+        52.00000000000002,
+        83.0
+      ],
+      "size_mm": [
+        30.0,
+        10.000000000000007,
+        12.0
+      ],
+      "basis": "ASSUMED electronics80g total"
+    },
+    {
+      "name": "06_ELECTRONICS_UPRIGHT_LEFT",
+      "link": "sprayer_body",
+      "mass_kg": 0.014837489220192315,
+      "com_mm": [
+        -82.00000000000001,
+        43.759451731593124,
+        65.65443456651325
+      ],
+      "size_mm": [
+        4.0,
+        18.0,
+        118.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "06_ELECTRONICS_UPRIGHT_RIGHT",
+      "link": "sprayer_body",
+      "mass_kg": 0.014837489220192315,
+      "com_mm": [
+        15.999999999999998,
+        43.759451731593124,
+        65.65443456651325
+      ],
+      "size_mm": [
+        4.0,
+        18.0,
+        118.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "06_ELECTRONICS_SEAT",
+      "link": "sprayer_body",
+      "mass_kg": 0.008262,
+      "com_mm": [
+        -32.99999999999999,
+        43.00000000000001,
+        63.5
+      ],
+      "size_mm": [
+        102.0,
+        10.0,
+        3.0
+      ],
+      "basis": "V5 solid-density structural estimate"
+    },
+    {
+      "name": "WIRE_HARNESS_0",
+      "link": "sprayer_body",
+      "mass_kg": 0.0001,
+      "com_mm": [
+        -82.5,
+        58.00000000000001,
+        107.00000000000001
+      ],
+      "size_mm": [
+        5.0,
+        4.0,
+        4.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 1.25g/cm3"
+    },
+    {
+      "name": "WIRE_HARNESS_1",
+      "link": "sprayer_body",
+      "mass_kg": 0.0015393804002589986,
+      "com_mm": [
+        -85.0,
+        58.00000000000001,
+        156.00000000000003
+      ],
+      "size_mm": [
+        4.0,
+        4.0,
+        98.0
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 1.25g/cm3"
+    },
+    {
+      "name": "WIRE_HARNESS_2",
+      "link": "sprayer_body",
+      "mass_kg": 0.0003776450497434609,
+      "com_mm": [
+        -75.0,
+        51.5,
+        206.5
+      ],
+      "size_mm": [
+        22.219760266366258,
+        16.364788152017667,
+        6.968735951396013
+      ],
+      "basis": "APPROXIMATE solid-envelope mass at 1.25g/cm3"
+    }
+  ],
+  "source_base_mass_kg": 0.61,
+  "source_base_mass_basis": "User URDF: frame-kit mass only; battery/motors/avionics not established",
+  "inertia_method": "Each part: axis-aligned box inertia at CAD COM, then parallel-axis sum; estimates, not measured"
+}

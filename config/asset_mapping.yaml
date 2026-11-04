@@ -1,0 +1,100 @@
+# Generated from the supplied assembly_data.json; review against CAD before USD import.
+urdf: x500_mount_v6/urdf/x500_v2_sprayer.urdf
+aircraft_step: X500_COMPLETE_ASSEMBLY_WITH_SPRAYER.step
+payload_step: x500_mount_v6/cad/Sprayer_with_X500_Mount_FIT_CHECK.step
+attachment_step: x500_mount_v6/cad/X500_Rail_Mount_and_Risers_FIT_CHECK.step
+part_mapping_source: x500_mount_v6/assembly_data.json
+aircraft_visual_source: x500_mount_v6/meshes/x500_frame.stl
+step_units: mm
+target_units: m
+step_part_to_urdf_link:
+  01_COMPACT_BASE_4mm: sprayer_body
+  03_COMPACT_DRONE_INTERFACE: sprayer_body
+  04_HEAD_SUPPORT_ALUMINUM: sprayer_body
+  05_CAN_TRIGGER_BACKBONE: sprayer_body
+  06_ELECTRONICS_SEAT: sprayer_body
+  06_ELECTRONICS_UPRIGHT_LEFT: sprayer_body
+  06_ELECTRONICS_UPRIGHT_RIGHT: sprayer_body
+  BEARING_73: sprayer_body
+  BEARING_95: sprayer_body
+  BEARING_HOUSING_RETENTION_BAND: sprayer_body
+  CAN_OD65_7_HEIGHT_ASSUMED: sprayer_body
+  CAN_STEM_OD4_REFERENCE: sprayer_body
+  CLAMP_ANCHOR_0: sprayer_body
+  CLAMP_ANCHOR_1: sprayer_body
+  DRY_HOLLOW_SPINDLE: nozzle_head
+  DS3240_ORIENTATION_0: sprayer_body
+  DS3240_ORIENTATION_2: sprayer_body
+  DS3240_ORIENTATION_3: sprayer_body
+  DS3240_ORIENTATION_4: sprayer_body
+  DS3240_ORIENTATION_7: sprayer_body
+  DS3240_TRIGGER_0: sprayer_body
+  DS3240_TRIGGER_2: sprayer_body
+  DS3240_TRIGGER_3: sprayer_body
+  DS3240_TRIGGER_4: sprayer_body
+  DS3240_TRIGGER_7: sprayer_body
+  ELECTRONICS_TERMINAL_ENVELOPE: sprayer_body
+  HOSE_SHORT_OUTLET: nozzle_head
+  HOSE_SUPPLY_SERVICE_LOOP_0deg: sprayer_body
+  LID_SCREW_-82_101: sprayer_body
+  LID_SCREW_-82_51: sprayer_body
+  LID_SCREW_0_101: sprayer_body
+  LID_SCREW_0_51: sprayer_body
+  OPTIONAL_SKID_CAP_0_0: landing_risers
+  OPTIONAL_SKID_CAP_0_1: landing_risers
+  OPTIONAL_SKID_CAP_1_0: landing_risers
+  OPTIONAL_SKID_CAP_1_1: landing_risers
+  OPTIONAL_SKID_RISER_0_0: landing_risers
+  OPTIONAL_SKID_RISER_0_1: landing_risers
+  OPTIONAL_SKID_RISER_1_0: landing_risers
+  OPTIONAL_SKID_RISER_1_1: landing_risers
+  PCB_6V_BEC_ENVELOPE: sprayer_body
+  PCB_CONTROLLER_ENVELOPE: sprayer_body
+  PCB_VALVE_DRIVER_ENVELOPE: sprayer_body
+  PRINT_BEARING_HOUSING_LEFT: sprayer_body
+  PRINT_BEARING_HOUSING_RIGHT: sprayer_body
+  PRINT_CAN_CLAMP_0_BACK: sprayer_body
+  PRINT_CAN_CLAMP_0_FRONT: sprayer_body
+  PRINT_CAN_CLAMP_1_BACK: sprayer_body
+  PRINT_CAN_CLAMP_1_FRONT: sprayer_body
+  PRINT_ELECTRONICS_BOX: sprayer_body
+  PRINT_ELECTRONICS_LID: sprayer_body
+  PRINT_NOZZLE_SHAFT_COUPLER_LEFT: nozzle_head
+  PRINT_NOZZLE_SHAFT_COUPLER_RIGHT: nozzle_head
+  PRINT_ORIENTATION_CARTRIDGE: sprayer_body
+  PRINT_PRESS_GUIDE: sprayer_body
+  PRINT_ROTATING_VALVE_CRADLE: nozzle_head
+  PRINT_TRIGGER_CARTRIDGE: sprayer_body
+  PULLEY_DRIVEN_40T_ENVELOPE: nozzle_head
+  PULLEY_SERVO_40T_ENVELOPE: sprayer_body
+  RAIL_CAP_0_0: rail_mount
+  RAIL_CAP_0_1: rail_mount
+  RAIL_CAP_1_0: rail_mount
+  RAIL_CAP_1_1: rail_mount
+  RAIL_LOWER_0_0: rail_mount
+  RAIL_LOWER_0_1: rail_mount
+  RAIL_LOWER_1_0: rail_mount
+  RAIL_LOWER_1_1: rail_mount
+  SHAFT_COLLAR_104: nozzle_head
+  SHAFT_COLLAR_69: nozzle_head
+  TIMING_BELT_160mm_ENVELOPE: sprayer_body
+  TOP_SPINE_SCREW_-20: sprayer_body
+  TOP_SPINE_SCREW_-8: sprayer_body
+  TRIGGER_METAL_HORN: trigger_crank
+  TRIGGER_ROLLER: trigger_crank
+  TRIGGER_STOP_SCREW: sprayer_body
+  VALVE_2V025_BODY: nozzle_head
+  VALVE_2V025_COIL: nozzle_head
+  VALVE_FITTING_IN: nozzle_head
+  VALVE_FITTING_OUT: nozzle_head
+  VALVE_STRAP_11.0: nozzle_head
+  VALVE_STRAP_31.0: nozzle_head
+  VALVE_TOP_NUT: nozzle_head
+  WET_ADAPTER_OUTLET_REFERENCE: sprayer_body
+  WET_FAN_TIP_ENVELOPE: nozzle_head
+  WET_NOZZLE_BODY_REFERENCE: nozzle_head
+  WET_STEM_ADAPTER_REFERENCE: sprayer_body
+  WIRE_HARNESS_0: sprayer_body
+  WIRE_HARNESS_1: sprayer_body
+  WIRE_HARNESS_2: sprayer_body
+  X500_BRIDGE_156x104: rail_mount

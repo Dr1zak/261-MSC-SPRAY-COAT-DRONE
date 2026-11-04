@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="x500_v2">
+  <!--
+    Physics-ready, single-rigid-body X500 V2 model for Isaac Sim.
+    Mass is the Holybro frame-kit specification (0.610 kg).
+    Inertia is an engineering estimate and should be replaced by measured data
+    before controller or flight-dynamics validation.
+  -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.610"/>
+      <inertia ixx="0.0125" ixy="0" ixz="0"
+               iyy="0.0125" iyz="0" izz="0.0220"/>
+    </inertial>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <!-- STL is in millimetres; URDF/Isaac Sim uses metres. -->
+        <mesh filename="../meshes/x500_frame.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="x500_dark">
+        <color rgba="0.12 0.12 0.12 1.0"/>
+      </material>
+    </visual>
+
+    <!-- A primitive collision volume is faster and more stable than the full CAD mesh. -->
+    <collision>
+      <origin xyz="0 0 -0.0243" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.405 0.405 0.325"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

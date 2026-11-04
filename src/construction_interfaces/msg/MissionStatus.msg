@@ -1,0 +1,9 @@
+string mission_id
+string state
+string current_target
+uint32 total
+uint32 completed
+uint32 failed
+uint32 blocked
+uint32 remaining
+float32 progress

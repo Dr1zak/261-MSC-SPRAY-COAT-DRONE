@@ -1,0 +1,10 @@
+build/
+install/
+log/
+__pycache__/
+.pytest_cache/
+*.pyc
+reports/*
+!reports/.gitkeep
+assets/generated/*
+!assets/generated/.gitkeep

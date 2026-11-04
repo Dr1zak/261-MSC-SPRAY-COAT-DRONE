@@ -1,0 +1,171 @@
+{
+  "new_parts_STL": [
+    {
+      "file": "OPTIONAL_SKID_CAP_0_0.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "OPTIONAL_SKID_CAP_0_1.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "OPTIONAL_SKID_CAP_1_0.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "OPTIONAL_SKID_CAP_1_1.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "OPTIONAL_SKID_RISER_0_0.stl",
+      "closed": true,
+      "facets": 760
+    },
+    {
+      "file": "OPTIONAL_SKID_RISER_0_1.stl",
+      "closed": true,
+      "facets": 760
+    },
+    {
+      "file": "OPTIONAL_SKID_RISER_1_0.stl",
+      "closed": true,
+      "facets": 760
+    },
+    {
+      "file": "OPTIONAL_SKID_RISER_1_1.stl",
+      "closed": true,
+      "facets": 760
+    },
+    {
+      "file": "RAIL_CAP_0_0.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "RAIL_CAP_0_1.stl",
+      "closed": true,
+      "facets": 720
+    },
+    {
+      "file": "RAIL_CAP_1_0.stl",
+      "closed": true,
+      "facets": 732
+    },
+    {
+      "file": "RAIL_CAP_1_1.stl",
+      "closed": true,
+      "facets": 732
+    },
+    {
+      "file": "RAIL_LOWER_0_0.stl",
+      "closed": true,
+      "facets": 1292
+    },
+    {
+      "file": "RAIL_LOWER_0_1.stl",
+      "closed": true,
+      "facets": 1292
+    },
+    {
+      "file": "RAIL_LOWER_1_0.stl",
+      "closed": true,
+      "facets": 1292
+    },
+    {
+      "file": "RAIL_LOWER_1_1.stl",
+      "closed": true,
+      "facets": 1292
+    },
+    {
+      "file": "X500_BRIDGE_156x104.stl",
+      "closed": true,
+      "facets": 6808
+    }
+  ],
+  "step_roundtrip_parts": 17,
+  "step_all_shapes_valid": true,
+  "rail_adapter_full_source_AABB_overlap_candidates": [
+    {
+      "new_part": "RAIL_LOWER_0_0",
+      "source_component": 231
+    },
+    {
+      "new_part": "RAIL_CAP_0_0",
+      "source_component": 231
+    },
+    {
+      "new_part": "RAIL_LOWER_0_1",
+      "source_component": 233
+    },
+    {
+      "new_part": "RAIL_CAP_0_1",
+      "source_component": 233
+    },
+    {
+      "new_part": "RAIL_LOWER_1_0",
+      "source_component": 231
+    },
+    {
+      "new_part": "RAIL_CAP_1_0",
+      "source_component": 4
+    },
+    {
+      "new_part": "RAIL_CAP_1_0",
+      "source_component": 231
+    },
+    {
+      "new_part": "RAIL_LOWER_1_1",
+      "source_component": 233
+    },
+    {
+      "new_part": "RAIL_CAP_1_1",
+      "source_component": 2
+    },
+    {
+      "new_part": "RAIL_CAP_1_1",
+      "source_component": 233
+    },
+    {
+      "new_part": "X500_BRIDGE_156x104",
+      "source_component": 215
+    },
+    {
+      "new_part": "X500_BRIDGE_156x104",
+      "source_component": 216
+    }
+  ],
+  "nonrail_candidates_exact_clearance": [
+    {
+      "new_part": "RAIL_CAP_1_0",
+      "source_component": 4,
+      "clearance_mm": 0.5614891052246094,
+      "method": "Conservative complete-source component bounding box"
+    },
+    {
+      "new_part": "RAIL_CAP_1_1",
+      "source_component": 2,
+      "clearance_mm": 0.511934661865233,
+      "method": "Conservative complete-source component bounding box"
+    },
+    {
+      "new_part": "X500_BRIDGE_156x104",
+      "source_component": 215,
+      "clearance_mm": 9.635331648155175,
+      "method": "Unsimplified original component triangle surfaces"
+    },
+    {
+      "new_part": "X500_BRIDGE_156x104",
+      "source_component": 216,
+      "clearance_mm": 9.635336360819062,
+      "method": "Unsimplified original component triangle surfaces"
+    }
+  ],
+  "unexpected_adapter_source_intersections": [],
+  "nominal_rail_radial_bore_clearance_mm": 0.1,
+  "mesh_rail_radial_clearance_mm": 0.4,
+  "fit_only": true
+}

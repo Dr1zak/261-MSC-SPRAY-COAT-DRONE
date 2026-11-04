@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="x650_compact_sprayer">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0 0 0.0359" rpy="0 0 0" />
+      <mass value="2" />
+      <inertia ixx="0.05690848888" ixy="0" ixz="0" iyy="0.05690848888" iyz="0" izz="0.1065002178" />
+    </inertial>
+    <visual name="holybro_x650_frame">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/x650_frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="x650_carbon_dark">
+        <color rgba="0.13 0.16 0.18 1" />
+      </material>
+    </visual>
+    <collision name="central_frame">
+      <origin xyz="0 0 0.05" rpy="0 0 0" />
+      <geometry>
+        <box size="0.16 0.16 0.07" />
+      </geometry>
+    </collision>
+    <collision name="x650_arm_1">
+      <origin xyz="-0.142405 -0.142405 0.065" rpy="0 1.490072091 -2.35619449" />
+      <geometry>
+        <cylinder radius="0.011" length="0.2480263538416835" />
+      </geometry>
+    </collision>
+    <collision name="x650_motor_1">
+      <origin xyz="-0.22981 -0.22981 0.075" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.024" length="0.05" />
+      </geometry>
+    </collision>
+    <visual name="propeller_swept_disk_1">
+      <origin xyz="-0.22981 -0.22981 0.11" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.19685" length="0.002" />
+      </geometry>
+      <material name="propeller_swept_disk_color_1">
+        <color rgba="0.72 0.79 0.81 0.28" />
+      </material>
+    </visual>
+    <collision name="x650_arm_2">
+      <origin xyz="-0.142405 0.142405 0.065" rpy="0 1.490072091 2.35619449" />
+      <geometry>
+        <cylinder radius="0.011" length="0.2480263538416835" />
+      </geometry>
+    </collision>
+    <collision name="x650_motor_2">
+      <origin xyz="-0.22981 0.22981 0.075" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.024" length="0.05" />
+      </geometry>
+    </collision>
+    <visual name="propeller_swept_disk_2">
+      <origin xyz="-0.22981 0.22981 0.11" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.19685" length="0.002" />
+      </geometry>
+      <material name="propeller_swept_disk_color_2">
+        <color rgba="0.72 0.79 0.81 0.28" />
+      </material>
+    </visual>
+    <collision name="x650_arm_3">
+      <origin xyz="0.142405 -0.142405 0.065" rpy="0 1.490072091 -0.7853981634" />
+      <geometry>
+        <cylinder radius="0.011" length="0.2480263538416835" />
+      </geometry>
+    </collision>
+    <collision name="x650_motor_3">
+      <origin xyz="0.22981 -0.22981 0.075" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.024" length="0.05" />
+      </geometry>
+    </collision>
+    <visual name="propeller_swept_disk_3">
+      <origin xyz="0.22981 -0.22981 0.11" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.19685" length="0.002" />
+      </geometry>
+      <material name="propeller_swept_disk_color_3">
+        <color rgba="0.72 0.79 0.81 0.28" />
+      </material>
+    </visual>
+    <collision name="x650_arm_4">
+      <origin xyz="0.142405 0.142405 0.065" rpy="0 1.490072091 0.7853981634" />
+      <geometry>
+        <cylinder radius="0.011" length="0.2480263538416835" />
+      </geometry>
+    </collision>
+    <collision name="x650_motor_4">
+      <origin xyz="0.22981 0.22981 0.075" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.024" length="0.05" />
+      </geometry>
+    </collision>
+    <visual name="propeller_swept_disk_4">
+      <origin xyz="0.22981 0.22981 0.11" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.19685" length="0.002" />
+      </geometry>
+      <material name="propeller_swept_disk_color_4">
+        <color rgba="0.72 0.79 0.81 0.28" />
+      </material>
+    </visual>
+    <collision name="x650_payload_rail_1">
+      <origin xyz="0.005 -0.03 0.016809569" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.32" />
+      </geometry>
+    </collision>
+    <collision name="x650_payload_rail_2">
+      <origin xyz="0.005 0.03 0.016809569" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.32" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_skid_1">
+      <origin xyz="0 -0.1589 -0.273190431" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.32" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_leg_1_1">
+      <origin xyz="-0.1 -0.10695 -0.125" rpy="0 2.786270651 -1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.29865567130057985" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_leg_1_2">
+      <origin xyz="0.1 -0.10695 -0.125" rpy="0 2.786270651 -1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.29865567130057985" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_skid_2">
+      <origin xyz="0 0.1589 -0.273190431" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.32" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_leg_2_1">
+      <origin xyz="-0.1 0.10695 -0.125" rpy="0 2.786270651 1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.29865567130057985" />
+      </geometry>
+    </collision>
+    <collision name="x650_landing_leg_2_2">
+      <origin xyz="0.1 0.10695 -0.125" rpy="0 2.786270651 1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.29865567130057985" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rail_mount">
+    <inertial>
+      <origin xyz="-0.00732259884 0.0003204033996 -0.01611751821" rpy="0 0 0" />
+      <mass value="0.3289488869" />
+      <inertia ixx="0.0003601351447620349" ixy="-2.0282022721730755e-09" ixz="-6.668505687378087e-08" iyy="0.0009407233802553283" iyz="9.863988801529271e-08" izz="0.0011844421891794962" />
+    </inertial>
+    <visual name="rail_mount_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/rail_mount_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="rail_mount_material_0">
+        <color rgba="0.69 0.74 0.79 1" />
+      </material>
+    </visual>
+    <collision name="bridge">
+      <origin xyz="-0.007 0.00027591 -0.023" rpy="0 0 0" />
+      <geometry>
+        <box size="0.156 0.104 0.006" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="sprayer_body">
+    <inertial>
+      <origin xyz="-0.02066974348 0.00282007502 0.1043998034" rpy="0 0 0" />
+      <mass value="1.279340267" />
+      <inertia ixx="0.006576174108910872" ixy="0.00030876921128389275" ixz="0.0011317378426546306" iyy="0.008059665323207657" iyz="0.00021482306906792298" izz="0.0038113272593325526" />
+    </inertial>
+    <visual name="sprayer_body_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_0">
+        <color rgba="0.86 0.6 0.19 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_1">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_2">
+        <color rgba="0.06 0.51 0.57 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_3">
+        <color rgba="0.1 0.38 0.76 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_4">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_5">
+        <color rgba="0.85 0.56 0.13 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_6">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_6">
+        <color rgba="0.1 0.5 0.27 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_7">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_7">
+        <color rgba="0.8 0.18 0.15 1" />
+      </material>
+    </visual>
+    <collision name="can">
+      <origin xyz="-0.04 0 0.1045" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03285" length="0.185" />
+      </geometry>
+    </collision>
+    <collision name="electronics">
+      <origin xyz="-0.033 0.0615 0.096" rpy="0 0 0" />
+      <geometry>
+        <box size="0.094 0.041 0.062" />
+      </geometry>
+    </collision>
+    <collision name="bottom_plate">
+      <origin xyz="0.005 -0.005 0.01" rpy="0 0 0" />
+      <geometry>
+        <box size="0.178 0.09 0.004" />
+      </geometry>
+    </collision>
+    <collision name="spine">
+      <origin xyz="-0.079 -0.014 0.122" rpy="0 0 0" />
+      <geometry>
+        <box size="0.004 0.03 0.22" />
+      </geometry>
+    </collision>
+    <collision name="top_plate">
+      <origin xyz="-0.043 0 0.234" rpy="0 0 0" />
+      <geometry>
+        <box size="0.09 0.096 0.004" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="trigger_crank">
+    <inertial>
+      <origin xyz="-0.008274909017 0.00187956933 0" rpy="0 0 0" />
+      <mass value="0.00178231835" />
+      <inertia ixx="4.674163597916135e-08" ixy="2.8522120177826912e-08" ixz="0.0" iyy="1.0294364423951163e-07" iyz="0.0" izz="1.256348411561693e-07" />
+    </inertial>
+    <visual name="trigger_crank_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/trigger_crank_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="trigger_crank_material_0">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="trigger_crank_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/trigger_crank_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="trigger_crank_material_1">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <collision name="horn">
+      <origin xyz="-0.0075 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.019 0.005 0.004" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="nozzle_head">
+    <inertial>
+      <origin xyz="1.878083071e-05 0.03265822757 0.04371584901" rpy="0 0 0" />
+      <mass value="0.2720906086" />
+      <inertia ixx="0.0006267366696645471" ixy="6.547271378931042e-08" ixz="8.469265579346144e-08" iyy="0.0005400767046260863" iyz="-0.00017693494427536128" izz="0.00011934452439458475" />
+    </inertial>
+    <visual name="nozzle_head_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_0">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_1">
+        <color rgba="0.85 0.56 0.13 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_2">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_3">
+        <color rgba="0.06 0.51 0.57 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_4">
+        <color rgba="0.1 0.38 0.76 1" />
+      </material>
+    </visual>
+    <collision name="valve">
+      <origin xyz="0 0.042 0.0635" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.022 0.067" />
+      </geometry>
+    </collision>
+    <collision name="dry_shaft">
+      <origin xyz="0 0 -0.0145" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0075" length="0.085" />
+      </geometry>
+    </collision>
+    <collision name="nozzle">
+      <origin xyz="0 0 -0.062" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.01" length="0.022" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rail_mount_fixed" type="fixed">
+    <parent link="base_link" />
+    <child link="rail_mount" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <joint name="sprayer_mount_fixed" type="fixed">
+    <parent link="rail_mount" />
+    <child link="sprayer_body" />
+    <origin xyz="0.04 0.00027591 -0.262" rpy="0 0 0" />
+  </joint>
+  <joint name="nozzle_yaw" type="revolute">
+    <parent link="sprayer_body" />
+    <child link="nozzle_head" />
+    <origin xyz="0.035 -0.02 0.095" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.5707963267948966" upper="0" effort="1" velocity="1" />
+    <dynamics damping="0.01" friction="0" />
+  </joint>
+  <joint name="can_trigger" type="revolute">
+    <parent link="sprayer_body" />
+    <child link="trigger_crank" />
+    <origin xyz="-0.025 -0.008 0.214" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-0.2013579207903308" upper="0" effort="1" velocity="1" />
+    <dynamics damping="0.01" friction="0" />
+  </joint>
+  <link name="spray_tip" />
+  <joint name="spray_tip_fixed" type="fixed">
+    <parent link="nozzle_head" />
+    <child link="spray_tip" />
+    <origin xyz="0 0 -0.073" rpy="0 0 0" />
+  </joint>
+  <link name="battery_6s">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.750" />
+      <inertia ixx="0.0003453125" ixy="0" ixz="0" iyy="0.0015625" iyz="0" izz="0.0015953125" />
+    </inertial>
+  </link>
+  <joint name="battery_6s_fixed" type="fixed">
+    <parent link="base_link" />
+    <child link="battery_6s" />
+    <origin xyz="0 0 0.045" rpy="0 0 0" />
+  </joint>
+</robot>

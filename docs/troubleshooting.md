@@ -1,0 +1,3 @@
+# Troubleshooting
+
+Run `./scripts/check_environment.sh`. The agent's sandbox may not expose the NVIDIA driver even when the integrated terminal does. If `prepare_assets.sh` returns 2, check the reported missing path, mesh, STEP name, or unit declaration; a clean run validates 90 mapped parts and 18 meshes. If `convert_model.sh` fails, use the installed Isaac 6.0 Python runtime at `$ISAAC_SIM_ROOT/python.sh` and inspect its Kit log. The first headless scene start may spend over a minute compiling RTX shaders on this 8 GB GPU; later starts were faster. Source ROS with `/opt/ros/jazzy/setup.bash` before `colcon build`. Use `--backend test` only for algorithm checks.

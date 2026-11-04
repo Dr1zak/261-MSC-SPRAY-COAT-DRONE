@@ -1,0 +1,15 @@
+{
+  "units": "radians",
+  "released_horizontal": {
+    "nozzle_yaw": 0,
+    "can_trigger": 0
+  },
+  "released_vertical": {
+    "nozzle_yaw": -1.5707963267948966,
+    "can_trigger": 0
+  },
+  "trigger_pressed": {
+    "can_trigger": -0.2013579207903308
+  },
+  "note": "Set servo mechanical zero and travel using actual hardware. Release trigger before closing solenoid. Controller/interlocks not supplied."
+}

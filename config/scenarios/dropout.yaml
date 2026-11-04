@@ -1,0 +1,27 @@
+seed: 1
+bounds:
+- 0
+- 50
+- 0
+- 50
+home:
+- 2
+- 2
+layout: data/layouts/baseline.csv
+robot_radius: 0.35
+clearance: 0.5
+grid_resolution: 0.5
+speed: 2.0
+mark_tolerance: 0.1
+max_retries: 1
+stabilization_s: 1.5
+deposition_s: 0.3
+obstacles: []
+failure_probability: 0
+deposition_sigma: 0
+localization:
+  dropout_intervals_s:
+  - - 20
+    - 25
+  - - 80
+    - 120

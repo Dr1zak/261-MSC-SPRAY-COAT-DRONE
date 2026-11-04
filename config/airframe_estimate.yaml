@@ -1,0 +1,22 @@
+# Masses are component estimates, not measurements of the assembled aircraft.
+# Locations are base_link coordinates; verify with a balance/CG measurement.
+components:
+  - {name: battery_4s_5000mah, mass_kg: 0.448, position_m: [0.0, 0.0, 0.045]}
+  - {name: pixhawk_6c_plastic, mass_kg: 0.0346, position_m: [0.0, 0.0, 0.045]}
+  - {name: m10_gps, mass_kg: 0.032, position_m: [0.0, 0.0, 0.13]}
+  - {name: pm02_v3, mass_kg: 0.020, position_m: [0.0, 0.0, 0.025]}
+  - {name: sik_air_radio, mass_kg: 0.0235, position_m: [0.0, 0.0, 0.04]}
+  - {name: pdb_estimate, mass_kg: 0.025, position_m: [0.0, 0.0, 0.0]}
+  - {name: wiring_fasteners_estimate, mass_kg: 0.050, position_m: [0.0, 0.0, 0.0]}
+  - {name: motor_1, mass_kg: 0.064, position_m: [-0.176012093, -0.17472409, 0.061]}
+  - {name: motor_2, mass_kg: 0.064, position_m: [-0.176012093, 0.17527591, 0.061]}
+  - {name: motor_3, mass_kg: 0.064, position_m: [0.173987907, -0.17472409, 0.061]}
+  - {name: motor_4, mass_kg: 0.064, position_m: [0.173987907, 0.17527591, 0.061]}
+  - {name: esc_1, mass_kg: 0.021, position_m: [-0.13, -0.13, 0.025]}
+  - {name: esc_2, mass_kg: 0.021, position_m: [-0.13, 0.13, 0.025]}
+  - {name: esc_3, mass_kg: 0.021, position_m: [0.13, -0.13, 0.025]}
+  - {name: esc_4, mass_kg: 0.021, position_m: [0.13, 0.13, 0.025]}
+  - {name: prop_1, mass_kg: 0.013, position_m: [-0.176012093, -0.17472409, 0.07]}
+  - {name: prop_2, mass_kg: 0.013, position_m: [-0.176012093, 0.17527591, 0.07]}
+  - {name: prop_3, mass_kg: 0.013, position_m: [0.173987907, -0.17472409, 0.07]}
+  - {name: prop_4, mass_kg: 0.013, position_m: [0.173987907, 0.17527591, 0.07]}

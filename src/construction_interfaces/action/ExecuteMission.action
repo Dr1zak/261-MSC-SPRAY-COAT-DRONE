@@ -1,0 +1,19 @@
+string mission_id
+string route_method
+---
+bool success
+string terminal_reason
+uint32 completed
+uint32 failed
+uint32 blocked
+float64 simulation_duration_s
+string json_report_path
+string csv_report_path
+bool returned_home
+bool landed
+---
+string state
+string current_point
+uint32 completed
+uint32 remaining
+float32 progress

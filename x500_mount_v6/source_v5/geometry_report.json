@@ -1,0 +1,189 @@
+{
+  "status": "dimensional prototype; dynamic hose and aircraft qualification pending",
+  "parts": 73,
+  "all_shapes_valid": true,
+  "moving_parts": [
+    "PULLEY_DRIVEN_40T_ENVELOPE",
+    "DRY_HOLLOW_SPINDLE",
+    "PRINT_ROTATING_VALVE_CRADLE",
+    "VALVE_2V025_BODY",
+    "VALVE_2V025_COIL",
+    "VALVE_TOP_NUT",
+    "VALVE_FITTING_IN",
+    "VALVE_FITTING_OUT",
+    "VALVE_STRAP_11.0",
+    "VALVE_STRAP_31.0",
+    "WET_NOZZLE_BODY_REFERENCE",
+    "WET_FAN_TIP_ENVELOPE",
+    "PRINT_NOZZLE_SHAFT_COUPLER_LEFT",
+    "PRINT_NOZZLE_SHAFT_COUPLER_RIGHT",
+    "SHAFT_COLLAR_69",
+    "SHAFT_COLLAR_104",
+    "HOSE_SHORT_OUTLET"
+  ],
+  "bbox_mm": [
+    182.0,
+    135.50000000000003,
+    230.0
+  ],
+  "bounds_mm": [
+    -88.0,
+    -53.5,
+    8.0,
+    94.0,
+    82.00000000000003,
+    238.0
+  ],
+  "rigid_swept_bbox_mm": [
+    187.10508364886235,
+    135.50000000000003,
+    230.0
+  ],
+  "rigid_sweep_degrees": [
+    0,
+    -90
+  ],
+  "rigid_rotation_sample_step_deg": 5,
+  "bbox_volume_reduction_vs_v4_percent": 44.833261554705615,
+  "footprint_reduction_vs_v4_percent": 41.95499694016852,
+  "rigid_head_clashes": [],
+  "min_rigid_obstacle_clearance_mm": 2.0,
+  "minimum_pair": [
+    0,
+    "PRINT_ROTATING_VALVE_CRADLE",
+    "06_ELECTRONICS_UPRIGHT_RIGHT"
+  ],
+  "hose_clashes_at_zero": [],
+  "dynamic_hose_clearance_verified": false,
+  "all_assembly_contacts_checked": false,
+  "manufactured_part_solid_mass_only_kg": 0.5300113356586869,
+  "manufactured_parts": [
+    {
+      "part": "PRINT_CAN_CLAMP_0_FRONT",
+      "volume_mm3": 4966.5151664230225,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.006208143958028778
+    },
+    {
+      "part": "PRINT_CAN_CLAMP_0_BACK",
+      "volume_mm3": 4966.515166423915,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.006208143958029893
+    },
+    {
+      "part": "PRINT_CAN_CLAMP_1_FRONT",
+      "volume_mm3": 4966.515166423686,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.006208143958029608
+    },
+    {
+      "part": "PRINT_CAN_CLAMP_1_BACK",
+      "volume_mm3": 4966.515166423882,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.006208143958029852
+    },
+    {
+      "part": "PRINT_PRESS_GUIDE",
+      "volume_mm3": 5482.0,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.0068525
+    },
+    {
+      "part": "PRINT_TRIGGER_CARTRIDGE",
+      "volume_mm3": 5507.449566773509,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.006884311958466886
+    },
+    {
+      "part": "05_CAN_TRIGGER_BACKBONE",
+      "volume_mm3": 27991.902732593873,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.07557813737800347
+    },
+    {
+      "part": "01_COMPACT_BASE_4mm",
+      "volume_mm3": 36415.83214974076,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.09832274680430006
+    },
+    {
+      "part": "03_COMPACT_DRONE_INTERFACE",
+      "volume_mm3": 24951.28144275502,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.06736845989543856
+    },
+    {
+      "part": "PRINT_BEARING_HOUSING_LEFT",
+      "volume_mm3": 16197.537286111952,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.02024692160763994
+    },
+    {
+      "part": "PRINT_BEARING_HOUSING_RIGHT",
+      "volume_mm3": 16197.537286111941,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.02024692160763993
+    },
+    {
+      "part": "04_HEAD_SUPPORT_ALUMINUM",
+      "volume_mm3": 19332.74388142145,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.05219840847983792
+    },
+    {
+      "part": "PRINT_ORIENTATION_CARTRIDGE",
+      "volume_mm3": 9020.049566773509,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.011275061958466885
+    },
+    {
+      "part": "PRINT_ROTATING_VALVE_CRADLE",
+      "volume_mm3": 11254.920366974036,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.014068650458717545
+    },
+    {
+      "part": "PRINT_NOZZLE_SHAFT_COUPLER_LEFT",
+      "volume_mm3": 3254.8930408131523,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.004068616301016441
+    },
+    {
+      "part": "PRINT_NOZZLE_SHAFT_COUPLER_RIGHT",
+      "volume_mm3": 3254.8930408131546,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.004068616301016443
+    },
+    {
+      "part": "PRINT_ELECTRONICS_BOX",
+      "volume_mm3": 51474.893341738534,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.06434361667717317
+    },
+    {
+      "part": "PRINT_ELECTRONICS_LID",
+      "volume_mm3": 17375.0495667735,
+      "solid_density_g_cm3": 1.25,
+      "mass_kg_solid": 0.021718811958466876
+    },
+    {
+      "part": "06_ELECTRONICS_UPRIGHT_LEFT",
+      "volume_mm3": 5495.3663778490045,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.014837489220192315
+    },
+    {
+      "part": "06_ELECTRONICS_UPRIGHT_RIGHT",
+      "volume_mm3": 5495.3663778490045,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.014837489220192315
+    },
+    {
+      "part": "06_ELECTRONICS_SEAT",
+      "volume_mm3": 3059.9999999999995,
+      "solid_density_g_cm3": 2.7,
+      "mass_kg_solid": 0.008262
+    }
+  ],
+  "complete_flight_mass_kg": null
+}

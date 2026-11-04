@@ -1,0 +1,27 @@
+{
+  "xml_valid": true,
+  "links": 7,
+  "joints": 6,
+  "root": "base_link",
+  "revolute_joints": [
+    "nozzle_yaw",
+    "can_trigger"
+  ],
+  "mesh_references_resolved": 18,
+  "all_inertias_positive_definite": true,
+  "inertia_triangle_inequality_passed": true,
+  "mass_sum_kg": 2.7443901447500005,
+  "minimum_inertia_eigenvalue_kg_m2": 3.480293765586512e-08,
+  "sampled_nozzle_poses": 19,
+  "spray_tip_xyz_m": [
+    0.07500000000000001,
+    -0.01972409,
+    -0.24
+  ],
+  "modeled_trigger_roller_drop_mm": -3.0,
+  "urdf_lengths": "metres; source mesh millimetres with0.001 scale",
+  "simulator_import_tested": false,
+  "structural_loads_tested": false,
+  "flexible_hose_dynamics_tested": false,
+  "flight_model_validated": false
+}

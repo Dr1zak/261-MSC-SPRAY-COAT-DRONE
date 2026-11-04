@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="x500_v2_compact_sprayer_v6">
+  <!--DIMENSIONAL / KINEMATIC PROTOTYPE. Masses and inertias are estimates; not a validated flight model.-->
+  <link name="base_link">
+    <!--Original inertial values retained:0.610kg FRAME KIT ONLY. Complete-aircraft mass is unknown. Original solid-box collider replaced by sparse geometry proxies.-->
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.610" />
+      <inertia ixx="0.0125" ixy="0" ixz="0" iyy="0.0125" iyz="0" izz="0.0220" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/x500_frame.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="x500_dark">
+        <color rgba="0.12 0.12 0.12 1.0" />
+      </material>
+    </visual>
+    <collision name="frame_plate_30.809569">
+      <origin xyz="-0.001012093 0.00027591 0.030809569" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14372 0.14372 0.002" />
+      </geometry>
+    </collision>
+    <collision name="frame_plate_60.809569">
+      <origin xyz="-0.001012093 0.00027591 0.060809569" rpy="0 0 0" />
+      <geometry>
+        <box size="0.14372 0.14372 0.002" />
+      </geometry>
+    </collision>
+    <collision name="arm_-1_-1">
+      <origin xyz="-0.110012093 -0.10872409 0.044" rpy="0 1.570796327 -2.35619449" />
+      <geometry>
+        <cylinder radius="0.008" length="0.15839191898578664" />
+      </geometry>
+    </collision>
+    <collision name="motor_-1_-1">
+      <origin xyz="-0.176012093 -0.17472409 0.061" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.04" />
+      </geometry>
+    </collision>
+    <collision name="arm_-1_1">
+      <origin xyz="-0.110012093 0.10927591 0.044" rpy="0 1.570796327 2.35619449" />
+      <geometry>
+        <cylinder radius="0.008" length="0.15839191898578664" />
+      </geometry>
+    </collision>
+    <collision name="motor_-1_1">
+      <origin xyz="-0.176012093 0.17527591 0.061" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.04" />
+      </geometry>
+    </collision>
+    <collision name="arm_1_-1">
+      <origin xyz="0.107987907 -0.10872409 0.044" rpy="0 1.570796327 -0.7853981634" />
+      <geometry>
+        <cylinder radius="0.008" length="0.15839191898578664" />
+      </geometry>
+    </collision>
+    <collision name="motor_1_-1">
+      <origin xyz="0.173987907 -0.17472409 0.061" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.04" />
+      </geometry>
+    </collision>
+    <collision name="arm_1_1">
+      <origin xyz="0.107987907 0.10927591 0.044" rpy="0 1.570796327 0.7853981634" />
+      <geometry>
+        <cylinder radius="0.008" length="0.15839191898578664" />
+      </geometry>
+    </collision>
+    <collision name="motor_1_1">
+      <origin xyz="0.173987907 0.17527591 0.061" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.04" />
+      </geometry>
+    </collision>
+    <collision name="payload_rail_-29.724089">
+      <origin xyz="0.0039879035 -0.029724089 0.016809569" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.24999999299999998" />
+      </geometry>
+    </collision>
+    <collision name="payload_rail_30.275911">
+      <origin xyz="0.0039879035 0.030275911 0.016809569" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.24999999299999998" />
+      </geometry>
+    </collision>
+    <collision name="landing_leg_-56">
+      <origin xyz="-0.001012093 -0.087838795 -0.073" rpy="0 2.821354157 -1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.20228404649949067" />
+      </geometry>
+    </collision>
+    <collision name="landing_skid_-56">
+      <origin xyz="-0.001012093 -0.11967759 -0.175966858" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.248" />
+      </geometry>
+    </collision>
+    <collision name="landing_leg_56.55">
+      <origin xyz="-0.001012093 0.08838971 -0.073" rpy="0 2.82134557 1.570796327" />
+      <geometry>
+        <cylinder radius="0.008" length="0.20228462257803087" />
+      </geometry>
+    </collision>
+    <collision name="landing_skid_56.55">
+      <origin xyz="-0.001012093 0.12022942 -0.175966858" rpy="0 1.570796327 0" />
+      <geometry>
+        <cylinder radius="0.005" length="0.248" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="rail_mount">
+    <!--Estimated inertial parameters: see mass_report.json and build_mount.py.-->
+    <inertial>
+      <origin xyz="-0.00732259884 0.0003204033996 -0.01611751821" rpy="0 0 0" />
+      <mass value="0.3289488869" />
+      <inertia ixx="0.0003601351447620349" ixy="-2.0282022721730755e-09" ixz="-6.668505687378087e-08" iyy="0.0009407233802553283" iyz="9.863988801529271e-08" izz="0.0011844421891794962" />
+    </inertial>
+    <visual name="rail_mount_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/rail_mount_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="rail_mount_material_0">
+        <color rgba="0.69 0.74 0.79 1" />
+      </material>
+    </visual>
+    <collision name="bridge">
+      <origin xyz="-0.007 0.00027591 -0.023" rpy="0 0 0" />
+      <geometry>
+        <box size="0.156 0.104 0.006" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="landing_risers">
+    <!--Estimated inertial parameters: see mass_report.json and build_mount.py.-->
+    <inertial>
+      <origin xyz="-0.001012093 0.000275915 -0.235173246" rpy="0 0 0" />
+      <mass value="0.2522280639" />
+      <inertia ixx="0.003956445660755306" ixy="-2.642742795433417e-19" ixz="2.846030702774449e-19" iyy="0.002299658369558704" iyz="1.4074299451577454e-17" izz="0.005660972110691949" />
+    </inertial>
+    <visual name="landing_risers_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/landing_risers_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="landing_risers_material_0">
+        <color rgba="0.92 0.43 0.09 1" />
+      </material>
+    </visual>
+    <collision name="foot_0_0">
+      <origin xyz="-0.089012093 -0.11967759 -0.276" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.038 0.006" />
+      </geometry>
+    </collision>
+    <collision name="post_0_0">
+      <origin xyz="-0.089012093 -0.11967759 -0.228" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.018 0.09" />
+      </geometry>
+    </collision>
+    <collision name="foot_0_1">
+      <origin xyz="-0.089012093 0.12022942 -0.276" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.038 0.006" />
+      </geometry>
+    </collision>
+    <collision name="post_0_1">
+      <origin xyz="-0.089012093 0.12022942 -0.228" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.018 0.09" />
+      </geometry>
+    </collision>
+    <collision name="foot_1_0">
+      <origin xyz="0.086987907 -0.11967759 -0.276" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.038 0.006" />
+      </geometry>
+    </collision>
+    <collision name="post_1_0">
+      <origin xyz="0.086987907 -0.11967759 -0.228" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.018 0.09" />
+      </geometry>
+    </collision>
+    <collision name="foot_1_1">
+      <origin xyz="0.086987907 0.12022942 -0.276" rpy="0 0 0" />
+      <geometry>
+        <box size="0.05 0.038 0.006" />
+      </geometry>
+    </collision>
+    <collision name="post_1_1">
+      <origin xyz="0.086987907 0.12022942 -0.228" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.018 0.09" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="sprayer_body">
+    <!--Estimated inertial parameters: see mass_report.json and build_mount.py.-->
+    <inertial>
+      <origin xyz="-0.02066974348 0.00282007502 0.1043998034" rpy="0 0 0" />
+      <mass value="1.279340267" />
+      <inertia ixx="0.006576174108910872" ixy="0.00030876921128389275" ixz="0.0011317378426546306" iyy="0.008059665323207657" iyz="0.00021482306906792298" izz="0.0038113272593325526" />
+    </inertial>
+    <visual name="sprayer_body_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_0">
+        <color rgba="0.86 0.6 0.19 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_1">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_2">
+        <color rgba="0.06 0.51 0.57 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_3">
+        <color rgba="0.1 0.38 0.76 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_4">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_5">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_05.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_5">
+        <color rgba="0.85 0.56 0.13 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_6">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_06.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_6">
+        <color rgba="0.1 0.5 0.27 1" />
+      </material>
+    </visual>
+    <visual name="sprayer_body_visual_7">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/sprayer_body_07.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="sprayer_body_material_7">
+        <color rgba="0.8 0.18 0.15 1" />
+      </material>
+    </visual>
+    <collision name="can">
+      <origin xyz="-0.04 0 0.1045" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.03285" length="0.185" />
+      </geometry>
+    </collision>
+    <collision name="electronics">
+      <origin xyz="-0.033 0.0615 0.096" rpy="0 0 0" />
+      <geometry>
+        <box size="0.094 0.041 0.062" />
+      </geometry>
+    </collision>
+    <collision name="bottom_plate">
+      <origin xyz="0.005 -0.005 0.01" rpy="0 0 0" />
+      <geometry>
+        <box size="0.178 0.09 0.004" />
+      </geometry>
+    </collision>
+    <collision name="spine">
+      <origin xyz="-0.079 -0.014 0.122" rpy="0 0 0" />
+      <geometry>
+        <box size="0.004 0.03 0.22" />
+      </geometry>
+    </collision>
+    <collision name="top_plate">
+      <origin xyz="-0.043 0 0.234" rpy="0 0 0" />
+      <geometry>
+        <box size="0.09 0.096 0.004" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="trigger_crank">
+    <!--Estimated inertial parameters: see mass_report.json and build_mount.py.-->
+    <inertial>
+      <origin xyz="-0.008274909017 0.00187956933 0" rpy="0 0 0" />
+      <mass value="0.00178231835" />
+      <inertia ixx="4.674163597916135e-08" ixy="2.8522120177826912e-08" ixz="0.0" iyy="1.0294364423951163e-07" iyz="0.0" izz="1.256348411561693e-07" />
+    </inertial>
+    <visual name="trigger_crank_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/trigger_crank_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="trigger_crank_material_0">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="trigger_crank_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/trigger_crank_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="trigger_crank_material_1">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <collision name="horn">
+      <origin xyz="-0.0075 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.019 0.005 0.004" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="nozzle_head">
+    <!--Estimated inertial parameters: see mass_report.json and build_mount.py.-->
+    <inertial>
+      <origin xyz="1.878083071e-05 0.03265822757 0.04371584901" rpy="0 0 0" />
+      <mass value="0.2720906086" />
+      <inertia ixx="0.0006267366696645471" ixy="6.547271378931042e-08" ixz="8.469265579346144e-08" iyy="0.0005400767046260863" iyz="-0.00017693494427536128" izz="0.00011934452439458475" />
+    </inertial>
+    <visual name="nozzle_head_visual_0">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_00.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_0">
+        <color rgba="0.15 0.19 0.24 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_1">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_01.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_1">
+        <color rgba="0.85 0.56 0.13 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_2">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_02.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_2">
+        <color rgba="0.7 0.74 0.79 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_3">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_03.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_3">
+        <color rgba="0.06 0.51 0.57 1" />
+      </material>
+    </visual>
+    <visual name="nozzle_head_visual_4">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/nozzle_head_04.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+      <material name="nozzle_head_material_4">
+        <color rgba="0.1 0.38 0.76 1" />
+      </material>
+    </visual>
+    <collision name="valve">
+      <origin xyz="0 0.042 0.0635" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.022 0.067" />
+      </geometry>
+    </collision>
+    <collision name="dry_shaft">
+      <origin xyz="0 0 -0.0145" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.0075" length="0.085" />
+      </geometry>
+    </collision>
+    <collision name="nozzle">
+      <origin xyz="0 0 -0.062" rpy="0 0 0" />
+      <geometry>
+        <cylinder radius="0.01" length="0.022" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rail_mount_fixed" type="fixed">
+    <parent link="base_link" />
+    <child link="rail_mount" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <joint name="landing_risers_fixed" type="fixed">
+    <parent link="base_link" />
+    <child link="landing_risers" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+  <joint name="sprayer_mount_fixed" type="fixed">
+    <parent link="rail_mount" />
+    <child link="sprayer_body" />
+    <origin xyz="0.04 0.00027591 -0.262" rpy="0 0 0" />
+  </joint>
+  <joint name="nozzle_yaw" type="revolute">
+    <parent link="sprayer_body" />
+    <child link="nozzle_head" />
+    <origin xyz="0.035 -0.02 0.095" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <limit lower="-1.5707963267948966" upper="0" effort="1" velocity="1" />
+    <dynamics damping="0.01" friction="0" />
+    <!--Effort1Nm and velocity1rad/s are simulation placeholders, not DS3240 specifications.-->
+  </joint>
+  <joint name="can_trigger" type="revolute">
+    <parent link="sprayer_body" />
+    <child link="trigger_crank" />
+    <origin xyz="-0.025 -0.008 0.214" rpy="0 0 0" />
+    <axis xyz="0 1 0" />
+    <limit lower="-0.2013579207903308" upper="0" effort="1" velocity="1" />
+    <dynamics damping="0.01" friction="0" />
+    <!--Effort1Nm and velocity1rad/s are simulation placeholders, not DS3240 specifications.-->
+  </joint>
+  <link name="spray_tip" />
+  <joint name="spray_tip_fixed" type="fixed">
+    <parent link="nozzle_head" />
+    <child link="spray_tip" />
+    <origin xyz="0 0 -0.073" rpy="0 0 0" />
+  </joint>
+  <!--spray_tip local -Z is discharge direction. No spray, wind, thrust, propeller or fluid simulator is included.-->
+</robot>

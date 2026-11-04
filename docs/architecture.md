@@ -1,0 +1,9 @@
+# Architecture and interfaces
+
+Current executable path: CSV → strict validation → inflated-obstacle grid A* → deterministic nearest-neighbor/2-opt route → idealized test-backend deposition → geometric verification → JSON/CSV reports. ROS interface definitions build separately; no live ROS node currently uses them.
+
+A separate Isaac runtime now loads the construction-site USD, reads the imported X500 pose and velocity, and applies four rotor forces and reaction torques through the PhysX rigid-body API. It computes the aggregate imported center of mass, closes position and attitude feedback loops, checks actual site clearance, and writes flight telemetry. This physics route is independent of the deterministic marking itinerary; it does not consume ROS mission actions or perform deposition. Controller thrust and motor constants are assumptions because the source aircraft model omits the battery and measured propulsion data.
+
+Planned frame tree: `map` → `site` → `odom` → `base_link` → `spray_tip`. `site` targets are in meters. A future TF2 adapter must own each transform exactly once; Isaac must own `/clock` and physical ground truth. The Isaac site preview now creates one ROS 2 `/clock` publisher graph, but an external subscriber has not been verified. ROS nodes should use `use_sim_time: true` and consume noisy localization rather than ground truth. No mission topics, services, actions, QoS settings, or TF publishers currently exist. The interface definitions are in `src/construction_interfaces/{msg,srv,action}`.
+
+`GridPlanner` treats exclusion rectangles as full-height columns, inflated by robot radius and clearance. It checks complete segments at sub-grid samples. Route costs include home departure and return. The deterministic backend is algorithm-only, so its `returned_home` and `landed` fields represent idealized itinerary completion, not physics observations.

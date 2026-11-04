@@ -1,0 +1,6 @@
+string mission_id
+string point_id
+string attempt_id
+string mark_type
+---
+construction_interfaces/MarkResult result

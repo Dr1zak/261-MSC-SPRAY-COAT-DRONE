@@ -1,0 +1,9 @@
+string mission_id
+string point_id
+string attempt_id
+geometry_msgs/Point target_position
+geometry_msgs/Point actual_position
+builtin_interfaces/Time stamp
+float64 horizontal_error_m
+bool success
+string reason

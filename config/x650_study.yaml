@@ -1,0 +1,36 @@
+# X650 propulsion study on the imported X500 sprayer payload.
+# The 2.0 kg X650 full-kit mass (without battery) is from Holybro.
+# Its distribution is an inertia surrogate, not a measured X650 CAD assembly.
+name: x650_study
+gravity_m_s2: 9.81
+rotor_positions_m:
+  - [-0.22981, -0.22981, 0.075]
+  - [-0.22981,  0.22981, 0.075]
+  - [ 0.22981, -0.22981, 0.075]
+  - [ 0.22981,  0.22981, 0.075]
+rotor_spin_signs: [1, -1, -1, 1]
+thrust_curve_csv: config/mn4014_kv330_p15_22v2.csv
+bench_voltage_v: 22.2
+reaction_torque_basis: assumed_0.012_m_per_n
+max_continuous_throttle: 0.85
+motor_time_constant_s: 0.06
+position_kp_s2: [0.7, 0.7, 1.8]
+velocity_kd_s: [1.4, 1.4, 2.2]
+attitude_kp_nm: [2.0, 2.0, 0.55]
+angular_velocity_kd_nms: [0.48, 0.48, 0.16]
+max_horizontal_acceleration_m_s2: 2.0
+max_vertical_acceleration_m_s2: 3.0
+max_tilt_deg: 20.0
+waypoint_tolerance_m: 0.75
+route_speed_m_s: 2.0
+design_current_limit_a: 60.0
+power_path_verified: false
+propeller_diameter_m: 0.3937 # X650 Gemfan 1555 nominal diameter; bench proxy is P15*5CF
+rotor_disk_clearance_margin_m: 0.05 # nominal adjacent disk gap is about 0.066 m
+mass_components:
+  - {name: x650_kit_central_mass_delta, mass_kg: 0.590, position_m: [0.0, 0.0, 0.02]}
+  - {name: x650_propulsion_pod_1, mass_kg: 0.200, position_m: [-0.22981, -0.22981, 0.075]}
+  - {name: x650_propulsion_pod_2, mass_kg: 0.200, position_m: [-0.22981, 0.22981, 0.075]}
+  - {name: x650_propulsion_pod_3, mass_kg: 0.200, position_m: [0.22981, -0.22981, 0.075]}
+  - {name: x650_propulsion_pod_4, mass_kg: 0.200, position_m: [0.22981, 0.22981, 0.075]}
+  - {name: battery_6s_5200mah, mass_kg: 0.750, position_m: [0.0, 0.0, 0.045]}

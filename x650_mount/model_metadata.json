@@ -1,0 +1,40 @@
+{
+  "model": "x650_mount/urdf/x650_sprayer.urdf",
+  "source_frame_step": "assets/source/x650-frame-2025-0825.stp",
+  "source_frame_step_sha256": "62cf031a85c59a7f023c2b525115497dfb0821de9c964c1a5cf905c549d156f7",
+  "frame_mesh": "x650_mount/meshes/x650_frame.stl",
+  "frame_mesh_sha256": "164f3b9a34b16bf38e982130dbc63540a6878e9735e3cee17bf227c5bcdce6ae",
+  "cad_to_model": "rotate +90 deg about X; translate +29.809569 mm along model Z",
+  "base_kit_mass_kg": 2.0,
+  "base_com_m": [
+    0.0,
+    0.0,
+    0.0359
+  ],
+  "battery_mass_kg": 0.75,
+  "payload_mass_kg": 1.8821620808500001,
+  "modeled_total_mass_kg": 4.63216208085,
+  "rotor_positions_m": [
+    [
+      -0.22981,
+      -0.22981,
+      0.075
+    ],
+    [
+      -0.22981,
+      0.22981,
+      0.075
+    ],
+    [
+      0.22981,
+      -0.22981,
+      0.075
+    ],
+    [
+      0.22981,
+      0.22981,
+      0.075
+    ]
+  ],
+  "status": "simulation model; exact mount fit, component masses and thrust curve remain unverified"
+}

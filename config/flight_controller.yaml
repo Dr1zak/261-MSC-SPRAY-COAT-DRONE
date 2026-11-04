@@ -1,0 +1,21 @@
+# 16 V manufacturer bench curve is a proxy for the Holybro motor/prop/ESC.
+# Complete aircraft and dynamic response still require direct measurement.
+gravity_m_s2: 9.81
+rotor_positions_m:
+  - [-0.176012093, -0.17472409, 0.061]
+  - [-0.176012093,  0.17527591, 0.061]
+  - [ 0.173987907, -0.17472409, 0.061]
+  - [ 0.173987907,  0.17527591, 0.061]
+rotor_spin_signs: [1, -1, -1, 1]
+thrust_curve_csv: config/air2216ii_t1045_16v.csv
+max_continuous_throttle: 0.90
+motor_time_constant_s: 0.06
+position_kp_s2: [0.7, 0.7, 1.8]
+velocity_kd_s: [1.4, 1.4, 2.2]
+attitude_kp_nm: [2.0, 2.0, 0.55]
+angular_velocity_kd_nms: [0.48, 0.48, 0.16]
+max_horizontal_acceleration_m_s2: 2.0
+max_vertical_acceleration_m_s2: 3.0
+max_tilt_deg: 20.0
+waypoint_tolerance_m: 0.75
+route_speed_m_s: 2.0
